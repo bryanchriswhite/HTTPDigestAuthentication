@@ -1,5 +1,5 @@
 AuthTesting::Application.routes.draw do
-  get "secret/index"
+  get :log_in, to: "secret#index", as: :log_in
 
   resources :users
 
